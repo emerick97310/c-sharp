@@ -47,3 +47,52 @@ namespace DemoClasse
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DemoClasse
+{
+    class Stagiaire
+    {
+        public string nom;
+        public int age;
+        public float taille;
+
+
+        public void init(string n, int a, float t)
+        {
+            nom = n;
+            age = a;
+            taille = t;
+        }
+
+        public Stagiaire(string n, int a, float t)      // pas de type de retour
+                                                        // constructeur
+        {
+            nom = n;
+            age = a;
+            taille = t;
+        }
+
+        public void afficheToi()
+        {
+            Console.WriteLine(nom + " a " + age + " ans et mesure "+ taille +" m");
+        }
+    }
+}
