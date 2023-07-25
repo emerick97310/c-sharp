@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DemoClasse
+{
+    class DemoClasse1
+    {
+        static void Main(string[] args)
+        {
+            Stagiaire s1;
+            Stagiaire s2;
+            Voiture v2;
+            v2 = new Voiture();
+
+            //s1 = new Stagiaire();
+
+            s1 = new Stagiaire("riri", 12, 1.42f);  // appel du constructeur
+            s2 = new Stagiaire("fifi", 12, 1.43f);
+
+            //s1.nom = "riri";
+            //s1.age = 12;
+            //s1.taille = 1.42f;
+            //s1.init("riri", 12, 1.42f);
+
+            //s2.nom = "fifi";
+            //s2.age = 12;
+            //s2.taille = 1.43f;
+            //s2.init("fifi", 12, 1.43f);
+
+            s1.afficheToi();
+            s2.afficheToi();
+
+
+            //Console.WriteLine("**************");
+            //afficher(s1);
+            //afficher(s2);
+
+            // empecher fermeture fenetre
+            Console.ReadLine();
+        }
+
+        static void afficher(Stagiaire x)
+        {
+            Console.WriteLine(x.nom + " a " + x.age + " ans");
+        }
+    }
+}
